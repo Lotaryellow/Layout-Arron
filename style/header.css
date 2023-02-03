@@ -1,0 +1,433 @@
+header {
+  width: 100%;
+}
+nav {
+  display: flex;
+  margin: 0px 0px 0px 8px;
+}
+.headerTels,
+.headerBtnTel {
+  display: none;
+}
+nav > button {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background: var(--BGwhite);
+  box-shadow: 0px 8px 16px rgba(255, 107, 0, 0.16);
+  border-radius: 15px;
+  top: -2px;
+  right: 9px;
+  z-index: 10;
+  padding: 3px 0px 0px 0px;
+}
+@media (min-width: 321px) {
+  nav {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background: var(--menuBG);
+    z-index: 22;
+    box-shadow: 0px 5px 20px var(--grayShadow);
+    padding: 0px 0px 10px 0px;
+  }
+  nav > img {
+    width: 202px;
+    margin: 15px 0px 0px 17px;
+  }
+  .headerTels {
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--textBlack);
+    margin: 43px 0px 0px 115px;
+  }
+  .headerBtnTel {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: rgba(226, 0, 26, 0.1);
+    border-radius: 15px;
+    padding: 14px 0px 0px 14px;
+    margin: 28px 0px 0px 25px;
+  }
+  nav > button {
+    position: unset;
+    top: unset;
+    right: unset;
+    margin: 25px 0px 0px 44px;
+  }
+}
+.navBtnGroup {
+  display: none;
+}
+.header__mainBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/320/header/Elements.png),
+    url(../img/320/header/Woman.png), url(../img/768/header/Elements.png);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%, 0%;
+  background-position: 0px 39px, 0px 18px, 0px 0px;
+  padding: 266px 0px 0px 0px;
+}
+.mainBanner__title {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: var(--textBlack);
+  padding: 14.5px 4px 0px 0px;
+}
+
+.mainBanner__subTitle {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--textFadedBlack);
+  padding: 11px 0px 0px 0px;
+}
+.btnStyle {
+  width: 233px;
+  height: 48px;
+  background: var(--buttonRed);
+  border-radius: 15px;
+  transition: 0.1s;
+}
+.btnStyle:hover {
+  background: var(--buttonRedHover);
+  box-shadow: 0px 10px 30px rgba(252, 20, 47, 0.2);
+}
+.btnStyle:active {
+  transform: translateY(5px);
+  box-shadow: 0px -3px 0 var(--buttonRed);
+}
+.header__mainBanner > button {
+  padding: 10px 0px;
+  margin: 19px 3px 0px 0px;
+}
+.header__mainBanner > button > a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--BGwhite);
+}
+.mainBanner-timer {
+  position: relative;
+  width: 300px;
+  height: 233px;
+  background: var(--BGwhite);
+  box-shadow: 0px 71px 80px rgba(255, 107, 0, 0.11),
+    0px 21.4044px 24.1177px rgba(255, 107, 0, 0.0716748),
+    0px 8.8903px 10.0172px rgba(255, 107, 0, 0.055),
+    0px 3.21545px 3.62304px rgba(255, 107, 0, 0.0383252);
+  border-radius: 30px;
+  margin: 85px 0px 0px 0px;
+}
+.mainBanner-timer > span:nth-child(1) {
+  display: block;
+  width: 159px;
+  height: 90px;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 113.007px;
+  color: var(--orangeText);
+  text-shadow: 0px 100px 80px rgba(255, 107, 0, 0.11),
+    0px 46.233px 36.9864px rgba(255, 107, 0, 0.0815843),
+    0px 26.4535px 21.1628px rgba(255, 107, 0, 0.0689459),
+    0px 16.0571px 12.8457px rgba(255, 107, 0, 0.0593943),
+    0px 9.67509px 7.74008px rgba(255, 107, 0, 0.0506057),
+    0px 5.38772px 4.31018px rgba(255, 107, 0, 0.0410541),
+    0px 2.31722px 1.85378px rgba(255, 107, 0, 0.0284157);
+  margin: -41px 0px 0px 71px;
+}
+.mainBanner-timer > span:nth-child(1)::after {
+  content: url(../img/320/header/fire.png);
+  position: relative;
+  top: -117px;
+  left: 71px;
+}
+.mainBanner-timer > span:nth-child(2) {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--textBlack);
+  padding: 16px 25px 0px 25px;
+}
+.mainBanner-timer > span:nth-child(3) {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--textBlack);
+  opacity: 0.5;
+  padding: 21px 0px 0px 88px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 5px 0px 0px;
+  font-weight: 600;
+}
+.timer__block {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  color: var(--grayInputText);
+}
+.timer__block > span {
+  font-size: 26px;
+  line-height: 31px;
+  color: var(--textBlack);
+}
+@media (min-width: 321px) {
+  .header__mainBanner {
+    padding: 517px 0px 0px 0px;
+    background-size: 0px, 529px, 92%;
+    background-position: 0px 0px, 116px 110px, 35px 217px;
+  }
+  .mainBanner__title {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .mainBanner__subTitle {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .header__mainBanner > button {
+    width: 284px;
+    height: 64px;
+    margin: 28px 0px 0px 0px;
+  }
+  .header__mainBanner > button > a {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .mainBanner-timer {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    height: unset;
+    margin: 7px 0px 0px 0px;
+  }
+  .mainBanner-timer > span:nth-child(1) {
+    margin: unset;
+    position: absolute;
+    padding: 88px 0px 0px 50px;
+  }
+  .mainBanner-timer > span:nth-child(2) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 66px 155px 0px 267px;
+    text-align: unset;
+  }
+  .mainBanner-timer > span:nth-child(3) {
+    padding: 11px 0px 0px 270px;
+  }
+  .timer {
+    padding: 5px 45px 32px 0px;
+  }
+}
+
+.headermenu {
+  position: fixed;
+  width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: var(--menuBG);
+  z-index: 11;
+  top: -500px;
+  transition: 0.8s;
+}
+.activeMenu {
+  top: 0px;
+}
+.menuFirstFloor {
+  display: flex;
+  justify-content: space-between;
+}
+.menuFirstFloor > img {
+  width: 137px;
+  height: 51px;
+  margin: 15px 0px 0px 9px;
+}
+.menuFirstFloor > a {
+  width: 48px;
+  height: 48px;
+  background: var(--BGwhite);
+  box-shadow: 0px 8px 16px rgba(255, 107, 0, 0.16);
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 0px 0px 17px;
+  margin: 0px 10px 0px 0px;
+}
+.headermenu > ul > li {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--textBlack);
+  padding: 30px 0px 0px 9px;
+}
+.menuThreeFloor {
+  margin: 50px 0px 0px 0px;
+}
+.menuThreeFloor1920 {
+  display: none;
+}
+.menuThreeFloor > img {
+  padding: 0px 7px 0px 9px;
+}
+.menuThreeFloor > span {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--textBlack);
+  width: 179px;
+}
+.menuThreeFloor > span > a {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration-line: underline;
+  color: var(--blueLink);
+}
+.menuFourFloor {
+  margin: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.menuFourFloor > span {
+  padding: 0px 0px 0px 9px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--textBlack);
+}
+.menuFourFloor > button {
+  margin: 0px 17px 0px 0px;
+  width: 48px;
+  height: 48px;
+  background: rgba(226, 0, 26, 0.1);
+  border-radius: 15px;
+}
+@media (min-width: 769px) {
+  nav > img:nth-child(2) {
+    margin: 30px 0px 5px 23px;
+  }
+  .navBtn {
+    display: none;
+  }
+  .navBtnGroup {
+    display: flex;
+    margin: 57px 0px 0px 78px;
+    gap: 24px;
+  }
+  .navBtnGroup > a {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: var(--textBlack);
+  }
+  .navBtnGroup > a:hover {
+    color: var(--buttonRed);
+    border-bottom: 1px solid var(--buttonRed);
+  }
+  .navBtnGroup > a:active {
+    color: var(--buttonRed);
+    border-bottom: 1px solid var(--buttonRed);
+  }
+  .menuThreeFloor {
+    display: block;
+  }
+  .menuThreeFloor1920 {
+    display: flex;
+    margin: 52px 0px 0px 263px;
+    width: 340px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .menuThreeFloor1920 > img {
+    width: 38px;
+    height: 26px;
+    margin: 0px 18px 0px 30px;
+  }
+  .menuThreeFloor1920 > span > a {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: --blueLink;
+  }
+  .headerTels {
+    margin: 58px 0px 0px 37px;
+  }
+  .headerTels > a {
+    color: var(--textBlack);
+    padding: 0px 0px 0px 25px;
+  }
+  .headerBtnTel {
+    margin: 40px 0px 0px 35px;
+  }
+  .header__mainBanner {
+    display: grid;
+    grid-template-rows: 1fr 100px 100px;
+    grid-template-columns: 1fr 1fr;
+    padding: 365px 0px 0px 0px;
+    background: none;
+  }
+  .mainBanner__title {
+    font-size: 110px;
+    line-height: 100px;
+    padding: 25px 0px 0px 306px;
+    text-align: start;
+  }
+  .mainBanner__subTitle {
+    font-size: 24px;
+    line-height: 34px;
+    padding: 10px 0px 0px 306px;
+    text-align: start;
+  }
+  .header__mainBanner > button:nth-child(3) {
+    margin: 21px 0px 0px 306px;
+  }
+  .mainBanner-timer {
+    width: 264px;
+    height: 309px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+    margin: 90px 0px 0px 380px;
+  }
+  .mainBanner-timer > span:nth-child(1) {
+    margin: -37px 0px 0px 0px;
+    position: absolute;
+    padding: 0px 0px 0px 30px;
+  }
+  .mainBanner-timer > span:nth-child(1)::after {
+    content: url(../img/320/header/fire.png);
+    position: relative;
+    top: -60px;
+    left: 100px;
+  }
+  .mainBanner-timer > span:nth-child(2) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 73px 30px 0px 30px;
+    text-align: unset;
+  }
+  .mainBanner-timer > span:nth-child(3) {
+    padding: 44px 0px 0px 30px;
+  }
+  .timer {
+    padding: 8px 30px 0px 0px;
+  }
+  .timer__block > span {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

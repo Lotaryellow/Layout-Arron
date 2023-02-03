@@ -1,0 +1,286 @@
+.sliderTitle {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--textBlack);
+  text-align: center;
+  padding: 70px 0px 0px 8px;
+}
+.main__slider {
+  display: flex;
+  max-width: 320px;
+  overflow: hidden;
+  padding: 80px 0px 0px 10px;
+}
+.slider__field {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  transition-duration: 2s;
+}
+.sliderTitle1920 {
+  display: none;
+}
+.slider {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  height: 320px;
+}
+.sliderBG {
+  position: absolute;
+  z-index: -2;
+}
+.apple {
+  background: url(../img/320/main/dots.png);
+  background-repeat: no-repeat;
+  background-position: 22px 11px;
+}
+.android {
+  background: url(../img/320/main/wave.png);
+  background-repeat: no-repeat;
+  background-position: 22px 11px;
+}
+.gadgets {
+  background: url(../img/320/main/gadgetsLogo.png);
+  background-repeat: no-repeat;
+  background-position: 170px 70px;
+}
+.notebooks {
+  background: url(../img/320/main/notebooksLogo.png);
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
+.romb1920 {
+  display: none;
+}
+.monobloks {
+  background: url(../img/320/main/pcLogo.png);
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
+.another {
+  background: url(../img/320/main/anotherLogo.png);
+  background-repeat: no-repeat;
+  background-position: 160px 70px;
+}
+.slider > img:nth-child(2) {
+  width: 167.06px;
+  height: 220px;
+  margin: -42px 0px 0px 41px;
+}
+.slider > img:nth-child(3) {
+  position: absolute;
+  margin: 39px 0px 0px 126px;
+}
+.slider > span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--textBlack);
+  padding: 32px 0px 0px 35px;
+}
+.slider > button {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 240px;
+  left: 195px;
+  background: var(--BGwhite);
+  box-shadow: 0px 20px 40px rgba(255, 107, 0, 0.13),
+    0px 10px 10px rgba(255, 107, 0, 0.05);
+  border-radius: 30px;
+  margin: 2px 0px 0px 0px;
+  z-index: 2;
+}
+.anotherlogo {
+  position: absolute;
+  top: -53px;
+  left: -95px;
+  z-index: -2;
+}
+.slider__pagination {
+  width: 111px;
+  margin: 18px 0px 60px 108px;
+}
+
+@media (min-width: 321px) {
+  .sliderTitle {
+    font-size: 40px;
+    text-align: left;
+    padding: 132px 0px 0px 64px;
+  }
+  .main__slider {
+    overflow: visible;
+    max-width: 100%;
+    display: block;
+    margin: 0px 0px 67px 0px;
+  }
+  .slider__field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .slider {
+    width: 85%;
+  }
+  .slider > img:first-child {
+    width: 357px;
+    height: 402px;
+  }
+  .slider > img:nth-child(2) {
+    width: 188px;
+    height: 241px;
+  }
+  .slider > button {
+    margin: 13px 0px 0px 34px;
+  }
+  .slider > span {
+    font-size: 22px;
+  }
+  .apple {
+    margin: 10px 0px 0px 50px;
+    background-position: 24px 19px;
+  }
+  .apple > img:nth-child(3) {
+    margin: 53px 0px 0px 145px;
+  }
+  .android {
+    margin: 5px 0px 0px 26px;
+    background-position: 192px 0px;
+  }
+  .android > img:nth-child(3) {
+    margin: 59px 0px 0px 127px;
+  }
+  .android > span {
+    display: block;
+    width: 200px;
+  }
+  .gadgets {
+    margin: 94px 0px 0px 42px;
+    background-position: 250px 66px;
+  }
+  .gadgets > img:nth-child(2) {
+    width: 250px;
+    height: 290px;
+    margin: -78px 0px -29px 34px;
+  }
+  .gadgets > img:nth-child(3) {
+    margin: 16px 0px 0px 137px;
+  }
+  .notebooks {
+    margin: 92px 0px 0px 26px;
+    background-position: 236px 92px;
+  }
+  .notebooks > img:nth-child(2) {
+    width: 255px;
+    height: 257px;
+    margin: -52px 0px -20px 37px;
+  }
+  .notebooks > img:nth-child(3) {
+    margin: 66px 0px 0px 135px;
+  }
+  .notebooks > span {
+    display: block;
+    width: 200px;
+  }
+  .monobloks {
+    margin: 88px 0px 0px 31px;
+    background-position: 220px 61px;
+  }
+  .monobloks > img:nth-child(2) {
+    width: 248px;
+    height: 234px;
+    margin: -58px 0px -20px 52px;
+  }
+  .monobloks > span {
+    padding: 59px 0px 0px 52px;
+  }
+  .another {
+    margin: 88px 0px 0px 26px;
+    background-position: 243px 122px;
+  }
+  .another > img:nth-child(2) {
+    width: 261px;
+    height: 270px;
+    margin: -78px 0px -9px 46px;
+  }
+  .another > span {
+    display: block;
+    width: 200px;
+  }
+  .slider__pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .sliderTitle {
+    display: none;
+  }
+  .sliderTitle1920 {
+    display: block;
+    font-family: "Bebas Neue";
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 84px;
+    color: var(--textBlack);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 61px 0px 0px 300px;
+  }
+  .slider__field {
+    padding: 100px 0px 0px 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 300px 375px 623px;
+  }
+  .apple {
+    margin: 5px 0px 0px 60px;
+    background: url(../img/1920/main/apple.png);
+    background-repeat: no-repeat;
+    background-position: 18px 17px;
+  }
+  .android {
+    margin: 2px 0px 0px 0px;
+    background: url(../img/320/main/wave.png);
+    background-repeat: no-repeat;
+    background-position: 185px 0px;
+  }
+  .gadgets {
+    margin: 45px 0px 0px 287px;
+    background: url(../img/320/main/gadgetsLogo.png);
+    background-repeat: no-repeat;
+    background-position: 242px 62px;
+    background-size: 50px;
+  }
+  .notebooks {
+    margin: 43px 0px 0px 38px;
+    background: none;
+  }
+  .notebooks > span:nth-child(5) {
+    padding: 60px 0px 0px 36px;
+  }
+  .romb1920 {
+    display: block;
+    width: 67px;
+    margin: -96px 0px 0px 226px;
+    z-index: -1;
+  }
+  .monobloks {
+    margin: 46px 0px 0px 48px;
+  }
+  .monobloks > img:nth-child(3) {
+    margin: 104px 0px 0px 174px;
+  }
+  .another {
+    margin: 44px 0px 0px 0px;
+    background-position: 231px 114px;
+    background-size: 60px;
+  }
+  .another > img:nth-child(3) {
+    width: 72px;
+    margin: 8px 0px 0px 122px;
+  }
+}

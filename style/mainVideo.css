@@ -1,0 +1,109 @@
+.main__video {
+  display: flex;
+  margin: 38px 0px 0px 0px;
+  background: url(../img/320/main/notebooksLogo.png);
+  background-repeat: no-repeat;
+  background-position: -25px 205px;
+}
+.main__video > img {
+  padding: 0px 0px 0px 11px;
+}
+.main__video > button {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background: var(--BGwhite);
+  box-shadow: 0px 20px 40px rgba(255, 107, 0, 0.13),
+    0px 10px 10px rgba(255, 107, 0, 0.05);
+  border-radius: 30px;
+  margin: 85px 0px 0px 97px;
+}
+.video__pagination {
+  width: 111px;
+  margin: 38px 0px 60px 108px;
+}
+.main__video > button:nth-child(5) {
+  display: none;
+}
+.main__video > button:nth-child(7) {
+  display: none;
+}
+.main__video768 {
+  display: none;
+}
+.main__video1920 {
+  display: none;
+}
+.main__video > button:nth-child(9) {
+  display: none;
+}
+@media (min-width: 321px) {
+  .main__video {
+    padding: 11px 0px 0px 15px;
+    background-position: -5px 178px;
+  }
+  .main__video > img:nth-child(3) {
+    display: none;
+  }
+  .main__video768 {
+    display: block;
+    border-radius: 15px;
+  }
+  .main__video > img:nth-child(4) {
+    padding: 0px 8px 0px 20px;
+  }
+  .main__video > button:nth-child(5) {
+    display: block;
+    margin: 85px 0px 0px 339px;
+  }
+  .main__video > button:nth-child(7) {
+    display: block;
+    margin: 85px 0px 0px 586px;
+  }
+  .video__pagination {
+    margin: 47px 0px 0px 328px;
+  }
+}
+@media (min-width: 769px) {
+  .main__video {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 24px 0px 0px 0px;
+    gap: 19px;
+    background: url(../img/320/main/notebooksLogo.png),
+      url(../img/1920/main/Group.png);
+    background-repeat: no-repeat;
+    background-position: 63px 180px, 1796px 155px;
+  }
+  .main__video > img:first-child {
+    width: 310px;
+    height: 253px;
+  }
+
+  .main__video768 {
+    width: 310px;
+    height: 253px;
+  }
+  .main__video1920 {
+    display: block;
+    width: 310px;
+    height: 253px;
+  }
+  .main__video > button:nth-child(2) {
+    margin: 100px 997px 0px 0px;
+  }
+  .main__video > button:nth-child(5) {
+    margin: 100px 330px 0px 0px;
+  }
+  .main__video > button:nth-child(7) {
+    margin: 100px 0px 0px 330px;
+  }
+  .main__video > button:nth-child(9) {
+    display: block;
+    margin: 100px 0px 0px 997px;
+  }
+  .video__pagination {
+    margin: 47px 0px 0px 900px;
+  }
+}

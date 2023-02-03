@@ -1,0 +1,202 @@
+.main__about {
+  padding: 28px 0px 0px 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/320/main/coroner.png), url(../img/320/main/wave.png),
+    linear-gradient(180deg, #ebf3f8 0%, rgba(235, 243, 248, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 135px 20px, 274px 922px, 0px 0px;
+}
+.main__about > span:nth-child(1) {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--textBlack);
+  padding: 33px 0px 0px 0px;
+}
+.main__about > span:nth-child(2) {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--textFadedBlack);
+  padding: 10px 30px 0px 20px;
+}
+.main__about > button:nth-child(3) {
+  margin: 19px 0px 30px 0px;
+  width: 146px;
+  height: 48px;
+}
+.main__about > button > a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 26px;
+  color: var(--BGwhite);
+}
+.main__about > button:nth-child(3) img {
+  padding: 7px 0px 0px 17px;
+}
+.main__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 0px 23px 0px;
+}
+.main__info h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--textBlack);
+  padding: 8px 0px 0px 0px;
+}
+.main__info span {
+  line-height: 18px;
+  color: var(--textFadedBlack);
+  padding: 5px 20px 0px 20px;
+  text-align: center;
+}
+h5 {
+  padding: 82px 0px 0px 0px;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--textBlack);
+}
+.infoBtnGroup {
+  display: none;
+}
+@media (min-width: 321px) {
+  .main__about {
+    display: block;
+    padding: 80px 0px 0px 0px;
+    background-position: 310px 95px, -15px 713px, 0px 0px;
+  }
+  .main__about > span:first-child {
+    font-size: 40px;
+    margin: 0px 0px 0px 24px;
+  }
+  .main__about > span:nth-child(2) {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 18px 430px 0px 25px;
+  }
+  .main__about > button:nth-child(3) {
+    position: relative;
+    top: -105px;
+    left: 561px;
+    width: 182px;
+    height: 64px;
+    font-size: 16px;
+  }
+  .main__infoBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -102px 0px 0px 22px;
+  }
+  .main__info {
+    align-items: flex-start;
+    padding: 35px 0px 0px 0px;
+  }
+  .main__info > h6 {
+    font-size: 20px;
+    padding: 27px 140px 0px 0px;
+  }
+  .main__info > span {
+    font-size: 18px;
+    text-align: start;
+    padding: 14px 35px 0px 0px;
+    line-height: 24px;
+  }
+
+  .main__infoBtnGroup {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__infoBtnGroup > h5 {
+    padding: 135px 0px 0px 27px;
+    font-size: 40px;
+  }
+  .infoBtnGroup {
+    display: flex;
+    margin: 127px 27px 0px 0px;
+    gap: 13px;
+  }
+  .infoBtnGroup > button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: var(--BGwhite);
+    box-shadow: 0px 8px 16px rgba(255, 107, 0, 0.16);
+    border-radius: 23px;
+  }
+}
+@media (min-width: 769px) {
+  .main__about {
+    display: grid;
+    grid-template-rows: 1fr 1fr 165px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 310px 0px 310px;
+    background-position: 537px 187px, 1650px 420px, 0px 0px;
+    background-size: 89px, 100px, 100%;
+  }
+  .main__about > span:nth-child(1) {
+    margin: unset;
+    padding: 79px 0px 0px 0px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .main__about > span:nth-child(2) {
+    padding: 0px 120px 100px 0px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .main__about > button:nth-child(3) {
+    top: unset;
+    bottom: 107px;
+    left: 0px;
+  }
+  .main__infoBlock {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 4;
+    margin: 0px -31px 40px 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .main__infoBlock > div:first-child {
+    padding: 26px 0px 0px 0px;
+  }
+  .main__infoBlock > div:nth-child(2) {
+    grid-row-end: 2;
+  }
+  .main__infoBlock > div:nth-child(3) {
+    grid-row-end: 2;
+    grid-column-end: 2;
+  }
+  .main__infoBlock > div:nth-child(3) > h6 {
+    padding: 25px 0px 0px 0px;
+  }
+  .main__infoBlock > div:nth-child(4) {
+    padding: 26px 0px 0px 0px;
+  }
+  .main__infoBlock > div:nth-child(4) > h6 {
+    padding: 25px 0px 16px 0px;
+  }
+  .main__infoBlock > div:nth-child(4) > span {
+    padding: 0px 115px 0px 0px;
+  }
+  .main__infoBtnGroup {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .main__infoBtnGroup > h5 {
+    padding: unset;
+    font-size: 56px;
+    line-height: 56px;
+  }
+  .infoBtnGroup {
+    margin: unset;
+  }
+}

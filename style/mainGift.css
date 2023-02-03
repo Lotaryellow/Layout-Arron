@@ -1,0 +1,300 @@
+.main__slider-gift {
+  max-width: 320px;
+  overflow: hidden;
+  margin: 80px 2px 0px 0px;
+  text-align: center;
+}
+.main__slider-gift > span {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--textBlack);
+  padding: 0px 0px 0px 15px;
+}
+.giftBtnGroup {
+  display: none;
+}
+.sliderField {
+  display: flex;
+  position: relative;
+  padding: 61px 0px 0px 0px;
+  transition-duration: 2s;
+}
+.sliderG {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 0px 0px;
+}
+.sliderG span {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: var(--textBlack);
+  text-align: left;
+  padding: 0px 0px 0px 50px;
+}
+.sliderBG-gift {
+  position: absolute;
+  z-index: -2;
+}
+.cases {
+  background: url(../img/320/main/wave.png),
+    url(../img/320/main/gadgetsLogo.png);
+  background-repeat: no-repeat;
+  background-position: 45px 0px, 237px 102px;
+}
+.cases1920 {
+  display: none;
+}
+.cases > img:nth-child(2) {
+  width: 260.32px;
+  height: 262px;
+}
+.glases {
+  background: url(../img/320/main/pcRomb.png),
+    url(../img/320/main/notebooksLogo.png);
+  background-repeat: no-repeat;
+  background-position: 15px 30px, 200px 100px;
+}
+.glases1920 {
+  display: none;
+}
+.glases > img:nth-child(2) {
+  margin: 0px 0px 0px 20px;
+}
+.cables {
+  background: url(../img/320/main/pccoroner.png),
+    url(../img/320/main/pcLogo.png);
+  background-repeat: no-repeat;
+  background-position: 35px 80px, 210px 36px;
+}
+.cables > img:nth-child(2) {
+  width: 295px;
+  height: 191px;
+  margin: 60px 0px 0px 0px;
+}
+.carHolder {
+  background: url(../img/320/main/wave.png);
+  background-repeat: no-repeat;
+  background-position: 225px 15px;
+}
+.carHolder > img:nth-child(2) {
+  width: 283px;
+  height: 212px;
+  margin: 17px 0px 19px 31px;
+}
+.chargers > img:nth-child(2) {
+  width: 273px;
+  height: 154px;
+  margin: 90px 0px 0px 40px;
+}
+.headPhones > img:nth-child(2) {
+  width: 216px;
+  height: 216px;
+  margin: 5px 0px 20px 50px;
+}
+.anotherGift > img:nth-child(2) {
+  width: 222px;
+  height: 178px;
+  margin: 40px 0px 0px 30px;
+}
+.anotherGift > span {
+  padding: 20px 0px 0px 16px;
+}
+.slider__paginationGift {
+  width: 111px;
+  margin: 67px 0px 60px 105px;
+}
+@media (min-width: 321px) {
+  .main__slider-gift {
+    max-width: 100%;
+    margin: 39px 0px 0px 0px;
+  }
+  .main__slider-gift > span {
+    display: block;
+    text-align: start;
+    font-size: 40px;
+    line-height: 56px;
+    padding: 0px 120px 0px 24px;
+  }
+  .sliderField {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 12px 0px 85px 0px;
+  }
+  .sliderG {
+    width: 100%;
+  }
+  .cases {
+    padding: 19px 0px 0px 20px;
+    background: none;
+  }
+  .cases > img:nth-child(2) {
+    margin: 0px 0px 3px 12px;
+  }
+  .cases > span {
+    padding: 0px 0px 0px 35px;
+  }
+  .glases {
+    padding: 26px 0px 0px 0px;
+    background: none;
+    background: url(../img/320/main/wave.png);
+    background-repeat: no-repeat;
+    background-position: 185px 47px;
+  }
+  .glases > img:nth-child(2) {
+    width: 254px;
+    height: 250px;
+    margin: 0px 0px 0px 6px;
+  }
+  .glases > span {
+    padding: 8px 0px 0px 42px;
+  }
+  .cables {
+    padding: 125px 0px 0px 17px;
+    background-position: 59px 207px, 227px 159px;
+  }
+  .cables > span {
+    padding: 0px 0px 0px 37px;
+  }
+  .carHolder {
+    padding: 120px 0px 0px 0px;
+    background-position: 218px 134px;
+  }
+  .carHolder > img:nth-child(2) {
+    margin: 19px 0px 16px 17px;
+  }
+  .carHolder > span {
+    padding: 0px 0px 0px 41px;
+  }
+  .chargers {
+    padding: 129px 0px 0px 20px;
+  }
+  .chargers > img:nth-child(2) {
+    margin: 79px 0px 0px 13px;
+  }
+  .chargers > span {
+    padding: 12px 0px 0px 35px;
+  }
+  .headPhones {
+    padding: 132px 0px 0px 3px;
+  }
+  .headPhones > img:nth-child(2) {
+    margin: 6px 0px 0px 45px;
+  }
+  .headPhones > span {
+    padding: 20px 0px 0px 38px;
+  }
+  .anotherGift {
+    padding: 119px 0px 0px 19px;
+  }
+  .anotherGift > img:nth-child(2) {
+    margin: 52px 0px 0px 46px;
+  }
+  .anotherGift > span {
+    padding: 13px 0px 0px 36px;
+  }
+  .slider__paginationGift {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .main__slider-gift {
+    background-color: rgba(235, 243, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .main__slider-gift > span {
+    font-size: 80px;
+    line-height: 84px;
+    padding: 145px 425px 0px 310px;
+  }
+  .giftBtnGroup {
+    display: block;
+    margin: 62px 0px 0px 1163px;
+  }
+  .giftBtnGroup > button {
+    width: 48px;
+    height: 48px;
+    background: var(--BGwhite);
+    box-shadow: 0px 8px 16px rgba(255, 107, 0, 0.16);
+    border-radius: 23px;
+    margin: 0px 0px 0px 20px;
+  }
+  .giftSlider {
+    overflow: hidden;
+    max-width: 1350px;
+  }
+  .sliderField {
+    display: flex;
+    max-width: 1300px;
+    padding: 0px 0px 0px 0px;
+  }
+  .cases {
+    padding: 55px 0px 0px 0px;
+  }
+  .cases1920 {
+    display: block;
+  }
+  .cases > img:nth-child(2) {
+    margin: unset;
+  }
+  .cases > img:nth-child(4) {
+    position: relative;
+    width: 100px;
+    bottom: 305px;
+    left: 30px;
+  }
+  .cases > img:nth-child(5) {
+    position: relative;
+    width: 60px;
+    bottom: 266px;
+    left: 224px;
+  }
+  .glases {
+    padding: 53px 0px 0px 65px;
+    background: none;
+  }
+  .glases1920 {
+    display: block;
+  }
+  .glases > img:nth-child(2) {
+    margin: 0px 0px 0px 48px;
+  }
+  .glases > img:nth-child(4) {
+    position: relative;
+    width: 70px;
+    bottom: 255px;
+    left: 33px;
+  }
+  .glases > img:nth-child(5) {
+    position: relative;
+    width: 70px;
+    bottom: 240px;
+    left: 224px;
+  }
+  .cables {
+    padding: 53px 0px 0px 30px;
+    background-position: 70px 135px, 240px 85px;
+  }
+  .carHolder {
+    padding: 51px 0px 0px 35px;
+    background-position: 255px 60px;
+  }
+  .chargers {
+    padding: 51px 0px 0px 30px;
+  }
+  .headPhones {
+    padding: 51px 0px 0px 45px;
+  }
+  .anotherGift {
+    padding: 51px 0px 0px 70px;
+  }
+  .slider__paginationGift {
+    display: block;
+    margin: -74px 1px 0px 0px;
+  }
+}

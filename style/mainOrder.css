@@ -1,0 +1,185 @@
+.main__order {
+  display: flex;
+  flex-direction: column;
+  background: url(../img/320/main/anotherLogo.png),
+    url(../img/320/main/notebooksLogo.png);
+  background-repeat: no-repeat;
+  background-position: 250px 172px, 258px 525px;
+}
+.main__orderFirstFloor span {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--textBlack);
+  padding: 34px 0px 0px 16px;
+}
+.order__chekInfo {
+  display: flex;
+}
+.order__chekInfo img {
+  width: 38px;
+  height: 44px;
+  margin: 16px 0px 0px 14px;
+}
+.order__chekInfo span {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--textBlack);
+  padding: 20px 0px 0px 7px;
+}
+.orderCheck {
+  margin: 18px 0px 0px 38px;
+  padding: 2px 5px 0px 0px;
+  width: 242px;
+  height: 50px;
+}
+.orderCheck > a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--BGwhite);
+}
+.main__orderFirstFloor {
+  padding: 34px 0px 0px 0px;
+}
+.main__orderFirstFloor > span {
+  display: block;
+  padding: 0px 32px 0px 0px;
+  text-align: center;
+}
+.main__order > ul {
+  margin: 34px 0px 0px 25px;
+}
+.listTitle1920 {
+  display: none;
+}
+.main__order > ul > li {
+  color: var(--buttonRed);
+  padding: 5px 0px 0px 0px;
+  list-style-type: disc;
+}
+.main__order > ul > li > span {
+  font-family: "Montserrat";
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--textFadedBlack);
+}
+.freeCons {
+  margin: 40px 0px 0px 40px;
+  width: 233px;
+  height: 48px;
+}
+.freeCons > a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: var(--BGwhite);
+}
+@media (min-width: 321px) {
+  .main__order {
+    background-position: 686px -47px, 664px 545px;
+    background-size: 59px, 50px;
+  }
+  .main__orderFirstFloor {
+    display: flex;
+    padding: unset;
+  }
+  .main__orderFirstFloor > span {
+    display: block;
+    font-size: 40px;
+    line-height: 56px;
+    padding: 23px 40px 0px 24px;
+    text-align: start;
+  }
+  .orderFirstFloorRight {
+    padding: 20px 22px 0px 0px;
+  }
+  .order__chekInfo > img {
+    margin: 17px 0px 0px 0px;
+  }
+  .order__chekInfo > span {
+    font-size: 14px;
+    padding: 22px 0px 0px 5px;
+    line-height: 17px;
+  }
+  .orderCheck {
+    width: 350px;
+    height: 64px;
+    font-size: 16px;
+    margin: 36px 0px 0px 0px;
+  }
+  .main__order > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 57px 0px 0px 24px;
+  }
+  .main__order > ul > li {
+    padding: 19px 0px 0px 23px;
+    list-style-type: disc;
+    padding-inline-start: 5px;
+    margin: 0px 0px 0px 22px;
+  }
+  .main__order > ul > li::marker {
+    font-size: 30px;
+  }
+  .main__order > ul > li > span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .freeCons {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  .main__order {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 700px 375px;
+    padding: 85px 0px 50px 310px;
+    background-position: 1475px 22px, 1610px 444px;
+  }
+  .main__orderFirstFloor {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__orderFirstFloor > span {
+    font-size: 48px;
+    line-height: 48px;
+    padding: 30px 80px 0px 0px;
+  }
+  .orderFirstFloorRight {
+    padding: unset;
+  }
+  .orderCheck {
+    width: 329px;
+    height: 81px;
+    margin: 35px 0px 0px 0px;
+  }
+  .main__order > ul {
+    margin: 16px 0px 0px 40px;
+  }
+  .listTitle1920 {
+    display: block;
+  }
+  .main__order > ul > li {
+    padding: 16px 0px 0px 0px;
+    margin: unset;
+  }
+  .main__order > ul > li:first-child {
+    list-style-type: none;
+  }
+  .main__order > ul > li:first-child > span {
+    font-family: "Bebas Neue";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: var(--textBlack);
+    margin: 0px 0px 0px -25px;
+  }
+  .main__order > ul > li:nth-child(2) {
+    margin: 19px 0px 0px 0px;
+  }
+  .main__order > ul > li:nth-child(13) {
+    padding: 14px 50px 0px 0px;
+  }
+}

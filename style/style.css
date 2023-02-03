@@ -1,0 +1,182 @@
+@import url(./nullStyle.css);
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+:root {
+  letter-spacing: -0.01em;
+  font-family: "Gilroy";
+  font-size: 14px;
+  --BGwhite: #ffffff;
+  --textBlack: #13171d;
+  --textFadedBlack: #444444;
+  --buttonRed: #e2001a;
+  --buttonRedHover: #fc142f;
+  --orangeText: #ff6b00;
+  --grayBorder: #c7d1d7;
+  --grayInputText: #646464;
+  --grayBorderInputActive: #867e7e;
+  --grayModal: #dadada;
+  --grayShadow: #cddae1;
+  --menuBG: #f4f9fc;
+  --blueLink: #015aa9;
+}
+
+body {
+  max-width: 320px;
+}
+@media (min-width: 321px) {
+  body {
+    max-width: 768px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    max-width: 100%;
+    background: url(../img/1920/header/Elements.png),
+      url(../img/1920/header/Light.png), url(../img/1920/header/Master.png);
+    background-repeat: no-repeat;
+    background-position: 75px 365px, 400px 100px, 800px 240px;
+  }
+}
+.modalCons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 32;
+  background: rgba(0, 0, 0, 80%);
+}
+.modalCons.active {
+  display: block;
+}
+.modalCons__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.modalCons__body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 294px;
+  background: var(--BGwhite);
+  border-radius: 20px;
+  position: relative;
+}
+.modalCons__body > a:first-child {
+  position: absolute;
+  top: 5px;
+  left: 270px;
+  font-size: 33px;
+  color: var(--grayInputText);
+  opacity: 0.7;
+}
+.modalCons__body > h4 {
+  padding: 30px 50px 0px 50px;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--textBlack);
+}
+.modalCons__body > h4 > span {
+  color: #d10018;
+}
+.modalCons__body > input {
+  margin: 15px 0px 0px 0px;
+  padding: 0px 0px 0px 25px;
+  width: 260px;
+  height: 48px;
+  border: 1px solid var(--grayModal);
+  border-radius: 15px;
+  font-family: "Montserrat";
+  line-height: 26px;
+  color: var(--grayInputText);
+}
+.modalCons__body > input:focus {
+  outline: none;
+  color: var(--textBlack);
+  border: 1px solid var(--grayBorderInputActive);
+}
+.modalCons__body > button {
+  margin: 15px 0px 0px 0px;
+  width: 260px;
+  height: 48px;
+  background: var(--buttonRed);
+  border-radius: 15px;
+}
+.modalCons__body > button > a {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--BGwhite);
+  transition: 0.1s;
+}
+.modalCons__body > button:hover {
+  background: var(--buttonRedHover);
+  box-shadow: 0px 10px 30px rgba(252, 20, 47, 0.2);
+  border-radius: 15px;
+}
+.modalCons__body > button:active {
+  transform: translateY(5px);
+  box-shadow: 0px -5px 0 #d10018;
+}
+
+.modalOrder {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 32;
+  background: rgba(0, 0, 0, 80%);
+}
+.activeOrder {
+  display: block;
+}
+.modalOrder__body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 294px;
+  background: var(--BGwhite);
+  border-radius: 20px;
+}
+.modalOrder__close {
+  position: absolute;
+  top: 5px;
+  left: 270px;
+  font-size: 33px;
+  color: var(--grayInputText);
+  opacity: 0.7;
+}
+.modalOrder__body > img {
+  width: 150px;
+  height: 150px;
+  margin: 40px 0px -25px 0px;
+}
+.modalOrder__body > span:nth-child(3) {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--textBlack);
+}
+.modalOrder__body > span:nth-child(4) {
+  padding: 15px 30px 0px 30px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--textBlack);
+}
